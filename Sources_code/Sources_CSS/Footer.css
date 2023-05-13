@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+
+/* Thiết kế cho footer */
+footer {
+    background-color: #0b0b23;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    display: flex;
+    justify-content: center;
+}
+/* Thiết kế cho các cột trong footer */
+.footer__column {
+    width: 20vw;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Thiết kế cho tiêu đề của từng cột */
+.footer__column h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Thiết kế cho nội dung của từng cột */
+.footer__column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__column li {
+  padding: 10px 10px 20px 20px ;
+}
+
+.footer__column a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Neue Frutiger World",Tahoma,sans-serif;
+}
+.footer__column li:hover{
+    border-radius: 10px;
+    background-color: rgba(66, 69, 103, 0.463);
+    
+}
+.footer__column :hover> a {
+    color: #0efb0a;
+
+}
+
+/* Thiết kế cho icon của các mạng xã hội */
+.footer__column-icons p{
+    color: #fff;
+    padding: 10px ;
+    text-decoration: none;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;  
+}
+.footer__column-icons a{
+    padding: 10px;
+    width: auto;
+    height: 50px;
+}
+.footer__column-icons a:hover{
+    border-radius: 10px;
+    background-color: rgba(66, 69, 103, 0.463);
+}
+
+/* Thiết kế cho các thông tin về công ty */
+.footer__company-info p {
+  margin-bottom: 10px;
+}
+
+.footer__company-info h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}

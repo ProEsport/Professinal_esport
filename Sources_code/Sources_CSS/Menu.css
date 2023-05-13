@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+header{ 
+    font-size: 14px ;
+    font-weight: bold;
+    height: 90px;
+    background-color: rgb(16, 20, 56);
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    z-index: 3000000;
+    box-shadow: 7px 7px 7px 7px rgb(13, 16, 42);
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+}
+.menu--landing--page{
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 1.25;
+    background-color: #111;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border: 0;
+    position: fixed;
+    z-index: 20000;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+
+    display: flex;
+}
+
+/*MENU_TRAI*/
+.menu--landing--page--left{
+    text-align: left;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 25px 0 15px 0;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+
+}
+.menu--landing--page--left--ProES{
+    text-align: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 10px ;
+}
+.menu--landing--page--left--ProES a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.menu--landing--page--left--ProES--logo{
+    box-sizing: border-box;
+    cursor: pointer;
+    width: auto;
+    position: relative;
+    padding-left: 10px;
+}
+.menu--landing--page--left--ProES--mean{
+  font-family: "Neue Frutiger World",Tahoma,sans-serif;
+
+}
+.menu--landing--page--left--ProES--mean h3{
+  font-size: larger;
+  border-right: #f9f9f9 solid 1px ;
+  padding-right: 30px;
+  color: #0efb0a;
+  font-family: "Neue Frutiger World",Tahoma,sans-serif;
+
+  
+}
+.menu--landing--page--left--ProES--mean :hover {
+  color: #03cd00;
+}
+
+
+/*MENU_GIUA*/
+.menu--landing--page--center{
+    text-align: left;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/*TAB*/
+.menu--landing--page--center--contents{
+    display: inline-flex;
+    position: relative;
+    height: 85px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.Main--menu--content{
+    display: inline-flex;
+    position: relative;
+    height: 80px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+
+}
+.Main--menu--content:hover{
+    border-radius: 10px;
+    height: 87px;
+}
+.Main--menu--content:hover p{
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #0efb0a;
+
+    
+}
+.Main--menu--content a {
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: 66px;
+    color: #f9f9f9;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: .08em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98),border-color .5s cubic-bezier(0.06, 0.81, 0, 0.98);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.Main--menu--content a p{
+    cursor: pointer;
+    color: #f9f9f9;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7.5px 13px;
+    text-align: center;
+    margin-right: 16px;
+}
+.Main--menu--content--des{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    box-sizing: border-box;
+}
+/*TAB_SOCIAL*/
+.Main--menu--content {
+    position: relative;
+  }
+  .Media--contact {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%; /* Canh giữa theo chiều ngang */
+    top: 100%; /* Hiển thị dưới mục cha */
+    transform: translateX(-50%); /* Di chuyển lên trên để hiển thị */
+    background-color: rgb(16, 20, 56);
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+    border-radius: 0 0 2px 2px ;
+    text-align: center; /* Canh giữa văn bản */
+    font-size: 13px;
+    min-width: 150px;
+    opacity: 0; /* Ẩn ban đầu */
+    visibility: hidden; /* Ẩn ban đầu */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Tạo hiệu ứng chuyển động */
+  }
+  #media:hover .Media--contact {
+    opacity: 1; /* Hiển thị khi hover */
+    visibility: visible; /* Hiển thị khi hover */
+  }
+  .Media--contact > li {
+    display: block;
+    margin: 5px 5px   ; /* Thêm khoảng cách giữa các mục */
+    transform: translateY(20px); /* Ẩn ban đầu và di chuyển lên trên */
+    opacity: 0; /* Ẩn ban đầu */
+    background-color: rgb(16, 20, 56);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding-left: 25px;
+    
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Tạo hiệu ứng chuyển động */
+  }
+  .Media--contact--place:hover{
+    background-color: rgb(46, 51, 103);
+    border-radius: 10px;
+  }
+  .Media--contact--place:hover .Media--contact--link{
+    color: #0efb0a;
+    
+  }
+  .Media--contact > li:nth-child(1) {
+    transition-delay: 0.1s; /* Độ trễ cho hiệu ứng */
+  }
+  .Media--contact > li:nth-child(2) {
+    transition-delay: 0.2s; /* Độ trễ cho hiệu ứng */
+  }
+  .Media--contact > li:nth-child(3) {
+    transition-delay: 0.3s; /* Độ trễ cho hiệu ứng */
+  }
+  #media:hover .Media--contact > li {
+    transform: translateY(0); /* Hiển thị và di chuyển xuống dưới */
+    opacity: 1; /* Hiển thị */
+  }
+/*MENU PHAI*/
+.menu--landing--page--right{
+    text-align: left;
+    display: flex;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+/*FIND*/
+.menu--landing--page--right--find  {
+    height: 50px;
+    width: 320px;
+    background-color: transparent;
+    margin-top: 10px
+}
+form {
+    display: flex;
+    align-items: center;
+}
+form i{
+    position: absolute;
+    right: 17%;
+}
+input[type="text"] {
+      color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px #100031;
+    flex-grow: 1;
+    margin-right: 10px;
+    background-color: transparent;
+}
+/*CLOUD*/
+.cloud-btn {
+    background-color: rgb(31, 34, 77);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    color: #0efb0a;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+    padding: 0 30px;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.cloud-btn:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 45px;
+    background-color: transparent;
+    border-bottom: #0efb0a solid;
+    border-radius:  30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    animation: cloud 4s ease-in-out infinite;
+}
+@keyframes cloud {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(15px) translateY(-5px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+.cloud-btn:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    color: #03cd00;
+}
+  
+
+/*////////////////////////////////////////////////////////////////////*/

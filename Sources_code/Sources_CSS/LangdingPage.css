@@ -1,0 +1,958 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+.Section1{
+    box-sizing: border-box;
+    height: 1200px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 0 0;
+    background-color: #0b0b23 ;
+    font-size: 14px ;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+}
+
+/*BACKGROUND*/
+.Section1--background--des{
+    position: absolute;
+}
+.Section1--background{
+    position: absolute;
+    margin: auto;
+}
+.Section1--background--des rect {
+        animation-name: changeColor;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+}
+@keyframes changeColor {
+        0% {
+          fill: rgb(26, 31, 78);
+          transform: translate(0, 0);
+        }
+        50% {
+          fill: rgb(61, 66, 118);
+          transform: translate(0, 10px);
+        }
+        100% {
+            fill: rgb(26, 31, 78);
+            transform: translate(0, 0);
+        }
+}
+
+/*CONTENT*/
+.Section1--content {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* hoặc chiều cao tùy ý */
+    width: 100vw;
+    
+}
+.Section1--content {
+    perspective: 1000px; /* giá trị perspective có thể điều chỉnh */
+}
+.Section1--content h3 {
+    color: #0efb0a;
+    text-shadow: 0px 0 0.5px 1px #1f4722;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;  
+    margin-top: 100px;
+    margin-top: -100px;
+}
+.Section1--content h1 {
+    background: linear-gradient(to top,#070340, #e0fbff,#e0fbff,#ebfcff,#ebfcff,#026473,#0b037b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:  transparent;
+    border-radius: 20px;
+    padding: 1px 10px 30px 30px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 100px;
+    text-shadow: 1px 3px 0px rgba(255, 255, 255, 0.8);
+    
+}
+.Section1--content h4 {
+    color: #f6fff6;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;  
+    position: absolute;
+    padding-top: 40px;
+    font-size: 18px;
+    text-shadow: 0 1px 2px #070340;
+
+}
+
+/*HIỆU ỨNG SCROLL*/
+.Section1--content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.Section1--content.is-hidden {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+/*HỌC THỬ NGAY*/
+#button--HocThuNgay {
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+.ProES--button {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0efb0a;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px 5px #8bf7ff;
+  }
+.ProES--button:hover{
+    color: #0efb0a;
+    padding: 25px 45px;
+}
+#button--HocThuNgay .ProES--button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#button--HocThuNgay .ProES--button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+/* Hiệu ứng khi hover */
+#button--HocThuNgay:hover .ProES--button span {
+    padding-right: 25px;
+}
+#button--HocThuNgay:hover .ProES--button span:after {
+    opacity: 1;
+    right: 0;
+}
+#myContent{
+    animation-name: myContent;
+    animation-duration: 2300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    animation-iteration-count: 1;
+    
+}
+#button--HocThuNgay{
+    animation-name: button--HocThuNgay;
+    animation-duration: 2300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    animation-iteration-count: 1;
+}
+@keyframes button--HocThuNgay {
+    from{
+        margin-top: 5%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0;
+        opacity: 100%;
+    }
+}
+@keyframes myContent {
+    from{
+        margin-top: 5%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0;
+        opacity: 100%;
+    }
+}
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Section2{
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 800px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    padding: 0 0;
+    background-color:#0b0b23 ;
+    font-size: 14px ;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    
+  }
+  .Section2--ProESnews{
+    align-items: center;
+    justify-items: center;
+  }
+  .Section2--ProESnews--tillte {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    border: none;
+
+  }
+  .Section2--ProESnews--tillte p{
+    padding-bottom: 5rem ;
+  }
+  .Section2--ProESnews--place{
+    background-color: transparent;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 100px;
+    
+}
+.ProEs--News{
+      border-radius:  80px 80px 0 0 ;
+    cursor: pointer;
+    width: 17%;
+    margin-bottom: 20px;
+    height: 400px;
+    margin: 0 20px;
+    box-shadow: 1px 1px 7px 7px #8888fc2c;
+    animation: CChangeColor 2s infinite;
+}
+.ProEs--News:hover{
+  background-color: #0b0b23a8;
+
+}
+.ProEs--News:hover .news--tilte {
+  color: #0efb0a;
+}
+.ProEs--News:hover .news--folder {
+  color: #0efb0a;
+}
+.ProEs--News:hover  .news--date {
+  color: #035a01;
+}
+@keyframes CChangeColor {
+    0% {
+      box-shadow: 1px 1px 7px 7px #8888fc2c;
+    }
+    20% {
+      box-shadow: 1px 1px 7px 7px #88d5fc2c;
+    }
+    40% {
+      box-shadow: 1px 1px 7px 7px #88fafc2c;
+    }
+    60% {
+      box-shadow: 1px 1px 7px 7px #88fcc02c;
+    }
+    80% {
+      box-shadow: 1px 1px 7px 7px #88fafc2c;
+    }
+    100% {
+      box-shadow: 1px 1px 7px 7px #88d5fc2c;
+    }
+  }
+  .ProEs--News a{
+    text-decoration: none;
+  }
+  .ProES--News--Banner img {
+    width: 100%;
+    height: 50%;
+    padding: 10px 10px;
+    border-radius: 100px;
+    border-top: 0.1mm solid #0efb0a;
+  }
+  .news--date {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #0efb0a; 
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+  }
+  .news--folder {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #035a01; 
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+
+  }
+  .news--tilte {
+    text-align: justify;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    padding: 7px 20px;
+    line-height: 1.5;
+
+  }
+/*SCROLL*/
+.Section2--ProESnews{
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.Section2--ProESnews.is-hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Section3{
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 800px;
+    width: 100%;
+    padding: 0 0;
+    background-color:#0b0b23 ;
+    font-size: 14px ;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    justify-content: center;
+}
+  .Section3--des2{
+    position: absolute;
+}
+.Section3--des2{
+    position: absolute;
+    margin: auto;
+}
+.Section3--des2 rect{
+        animation-name: changeColor2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+}
+@keyframes changeColor2 {
+    0% {
+      fill: rgb(239, 254, 255);
+      transform: translate(0, 0);
+    }
+    50% {
+      fill: rgb(200, 246, 249);
+      transform: translate(0, 10px);
+    }
+    100% {
+        fill: rgb(204, 239, 242);
+        transform: translate(0, 0);
+    }
+}
+  .Section3--background {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+  .Section3--background img {
+    vertical-align: middle;
+}
+/*COURSES*/
+.Section3--Courses--Tilte {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.Section3--Courses--Tilte span{
+    margin-bottom: 10em;
+}
+.ProESUni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .ProESUni-item {
+    position: relative;
+    width: 450px;
+    height: 200px;
+    margin: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 17px 7px #8bf7ff30;
+    border-radius: 30px;
+
+  }
+  .ProESUni-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+  }
+  .ProESUni-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.2);
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    opacity: 0.7;
+  }
+  .ProESUni-item{
+    position: relative;
+  }
+  .ProESUni-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Điều chỉnh độ cao của lớp mờ tại đây */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  }
+  .ProESUni-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .ProESUni-image-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: rgb(237, 255, 238);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .ProESUni-item:hover .ProESUni-image {
+    transform: scale(1.1);
+  }
+  .ProESUni-item:hover .ProESUni-image img {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .ProESUni-item:hover .ProESUni-image:before {
+    opacity: 1;
+  }
+  .ProESUni-item:hover .ProESUni-image-title {
+    opacity: 1;
+    }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .Courses{
+      box-sizing: border-box;
+      height: 1300px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+      padding: 0 0;
+      background-color:#0b0b23 ;
+      font-size: 14px ;
+      font-weight: bold;
+      position: relative;
+      text-align: left;
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: "Neue Frutiger World",Tahoma,sans-serif;
+      justify-content: center;
+    }
+    .courses-slider {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 5rem;
+      margin: 0 20rem;
+    }
+    .Courses1-Tilte{
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    }
+    .slick-initialized .slick-slide {
+      margin: 0 20px;
+    }
+    .slick-prev {
+      position: absolute;
+      bottom: 20%;
+      transform: translateY(-50%);
+      z-index: 100;
+      border-radius: 100%;
+      background-color: transparent;
+      color: #0efb0a;
+      border: none;
+      padding: 10px 20px;
+      box-shadow: 5px 5px 5px 0px #8bf7ff;
+      left: 30%;
+    }
+    .slick-next {
+      border-radius: 100%;
+      position: absolute;
+      bottom: 20%;
+      transform: translateY(-50%);
+      z-index: 100;
+      background-color: transparent;
+      color: #0efb0a;
+      box-shadow: 0px 5px 5px 0 #8bf7ff;
+      border: none;
+      padding: 10px 20px;
+      right: 30%;
+    }
+    .courses-items {
+      background-color: transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      border-radius: 30px;
+      border-top: #0efb0a53 1px solid;
+      width: 25vw;
+
+    }
+  
+    .courses-items a{
+      text-decoration: none;
+    }
+    .courses-items-Banner
+    .courses-items-Banner img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+    }
+    .courses-items-Banner {
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+    }
+    
+    .courses-items-Banner::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      z-index: 10;
+    }
+    .courses-items-Banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-radius: 35px;
+      padding: 10px;
+      z-index: 2;
+      transition: transform 0.3s ease;
+    }
+    
+    .courses-items:hover .courses-items-Banner img {
+      transform: scale(1.1);
+    }
+    
+    
+    .courses-items-content {
+      padding: 10px;
+      text-decoration: none;
+
+    }
+    .courses-items-content-tilte{
+      font-size: 20px;
+      font-weight: 600;
+      color: #035a01;
+      display: block;
+      margin: 15px;
+    }
+    .courses-items:hover .courses-items-content-tilte {
+      color: #0efb0a;
+    }
+    .courses-items:hover .courses-items-content-description {
+      color: #0efb0a;
+    }
+    .courses-items-content-description {
+      text-align: justify;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      display: block;
+      padding: 7px 20px;
+      line-height: 1.5;
+    }
+    .courses-items-footer {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      border-bottom: #035a01 5px solid;
+      border-radius: 35%;
+      box-shadow: 0px 10px 5px 5px #035a01;
+
+    }
+    
+    .courses-itemsFooter-price {
+      display: flex;
+      align-items: center;
+    }
+    price {
+      font-size: 14px;
+      margin-right: 5px;
+      color: #035a01;
+    }
+    .priceoffical{
+      font-size: 25px;
+      color: #0efb0a;
+      padding: 0 20px;
+    }
+    .courses-itemsFooter-review {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #035a01;
+    }
+    
+    .courses-itemsFooter-review-star {
+      margin-right: 5px;
+      margin-left: 1rem;
+      padding: 10px 17px;
+      color: #ffd700; /* Màu vàng cho sao đã được chọn */
+    }
+    
+    .courses-itemsFooter-review-Number {
+      display: flex;
+      align-items: center;
+    }
+    
+    .courses-itemsFooter-review-Number span {
+      margin-right: 5px;
+    }
+      /*DOTS*/
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 10px 0;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        transform: translateX(-50%);
+      }
+      
+      .slick-dots li {
+        display: inline-block;
+        margin: 0 5px;
+      }
+      
+      .slick-dots li button {
+        background: #026473;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        width: 10px;
+        padding: 0;
+        text-indent: -9999px;
+      }
+      
+      .slick-dots li button:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #026473;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+      }
+      
+      .slick-dots li.slick-active button:before {
+        background-color: #0efb0a;
+      }
+      
+      
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  .Section4{
+    box-sizing: border-box;
+    height: 1000px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    padding: 0 0;
+    background-color:#0b0b23 ;
+    font-size: 14px ;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    justify-content: center;
+  }
+  .Section4--place{
+    width: 100vw;
+    height: auto;
+    margin: 10rem 10rem;
+    background-color: transparent;
+    border-radius: 30px;
+    box-shadow: 0 0 50px 1px #040130;
+  }
+  .Section4--banner {
+    position: relative;
+    float: right;
+    width: 50%;
+    background-color: transparent;
+    padding-top: 3rem;
+    margin-right: 3rem;
+  }
+  .Section4--banner img {
+    width: 90%;
+    height: auto;
+    opacity: 1;
+    box-shadow: 1px 1px 7px 7px #8888fc2c;
+    animation: CChangeColor 2s infinite;
+    border-radius: 30px;
+
+  }
+  .Section4--banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+  }
+  .Esports--content,
+  .Esports--sologan {
+    position: relative;
+    z-index: 1;
+  }
+  .Section4--content {
+    margin-top: 12rem;
+    margin-left: 7rem;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    width: 35%;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    padding-top: 3rem ;
+  }
+  .Esports--content--tilte{
+    font-size: 35px;
+    text-align: left;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    color: #0efb0a;
+    text-shadow: 1px 1px 2px #ffffff;
+    
+  }
+  .Esports--content--description{
+    margin: 10px 10px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .Read_more{
+    color: #035a01;
+    text-align: left;
+    text-decoration: none;
+
+  }
+  .Read_more:hover{
+    color: #0efb0a;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .TaoGiaiDauCuaChinhMinh{
+    margin: 1rem 0;
+    color: #0efb0a;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+  .TaoGiaiDauCuaChinhMinh span{
+    font-weight: 600;
+    font-size: 16px;
+
+  }
+  .ProES--button{
+    margin-top: 7rem;
+  }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  .Section5{
+    box-sizing: border-box;
+    height: 1000px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    padding: 0 0;
+    background-color:#0b0b23 ;
+    font-size: 14px ;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    
+    justify-content: center;
+  }
+  .Section5-Tilte{
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+    transform: translateY(-50%);
+  }
+  .user-place {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    
+  }
+  .avt {
+    width: 60px;
+    padding: 5px ;
+    height: 60px;
+    background-color: #0b037b;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px #8bf7ff;
+  }
+  .avt img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .user-head {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .user-name {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #0efb0a;
+  }
+  .vote {
+    margin-left: 1rem;
+    padding: 10px 20px;
+    color: #ffd700; /* Màu vàng cho sao đã được chọn */
+    border-left: #0efb0a 1px solid;
+  }
+  .user-cmt{
+
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .cmt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    text-align: justify;
+
+  }
+  
+/*SLIDE*/
+.user-slider {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 20rem;
+}
+.user-slide-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+  border-radius: 35px;
+  background-color: transparent;
+border: #026473 2px solid;
+box-shadow: 0px 0px 7px 2px #8888fc2c;
+
+}
+.user-slide-item:hover .cmt{
+  color: #0efb0a;
+}
+.user-head {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+}
+.slick-initialized .slick-slide {
+  margin: 0 15px;
+}
+
